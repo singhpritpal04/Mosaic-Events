@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+    <base href="/"/>  <!--to apply css in every route-->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/owl.theme.css" type="text/css" media="all">
+    <!-- testimonials (owl-carousel) -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+    <!-- Style-CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- //Custom-Files -->
+    <base href="/admin">
+    <link rel="stylesheet" href="css/CardHomePage.css" type="text/css" media="all">
+    <!-- Web-Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
+          rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <base href="/user"/>
+    <link rel="stylesheet" href="css/Usercssdesign.css"/>
+    <base href="/user/user-profile"/>
+    <link rel="stylesheet" href="css/UserProfilecss.css"/>
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+
+<script src="js/jquery-2.2.3.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".dropdown").hover(
+            function () {
+                $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                $(this).toggleClass('open');
+            },
+            function () {
+                $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                $(this).toggleClass('open');
+            }
+        );
+    });
+</script>
+<!-- //dropdown smooth -->
+
+<!-- text typing animation -->
+<script src="js/text-typing.js"></script>
+<!-- //text typing animation -->
+
+<!-- testimonials -->
+<script src="js/owl.carousel.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                900: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: false,
+                    margin: 20
+                }
+            }
+        })
+    })
+</script>
+<!-- //testimonials -->
+
+<!-- smooth scrolling -->
+<script src="js/SmoothScroll.min.js"></script>
+<!-- move-top -->
+<script src="js/move-top.js"></script>
+<!-- easing -->
+<script src="js/easing.js"></script>
+<!--  necessary snippets for few javascript files -->
+<script src="js/party.js"></script>
+
+<script src="js/bootstrap.js"></script>
+<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+<!-- jQuery-Photo-filter-lightbox-Gallery-plugin -->
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/jquery.quicksand.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--<script src="js/popper.js"></script>-->
+<!--<script src="js/main.js"></script>-->
+<!--<script src="js/jquery.min.js"></script>-->
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css"/>
+<!-- //jQuery-Photo-filter-lightbox-Gallery-plugin -->
+
+<!-- //Js files -->
+
+</body>
+</html>
